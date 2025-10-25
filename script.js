@@ -29,7 +29,7 @@
 /// Search Functionality
     search.addEventListener("keyup", () => {
         field.innerHTML="";
-        
+        if(search.value.length>2){
         allSpells.forEach(spell => {
             
             if(spell.name.toLowerCase().includes(search.value.toLowerCase())){
@@ -47,7 +47,7 @@
                 else if(damagelevel!=="N/A"&&damagechlevel==="N/A"){generateSpellCards(name,level,casting_time,range,components,duration,damagelevel)}
                 else if(damagelevel==="N/A"&&damagechlevel==="N/A"){generateSpellCards(name,level,casting_time,range,components,duration,"No Damage")}
             });
-              }})});
+              }})}});
 
 
 
