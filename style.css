@@ -167,4 +167,5 @@ li::marker{
     margin-top: 10rem;
     width:90%;
     display:flex;
-    flex-wrap:wrap; }
+    flex-wrap:wrap;
+    justify-content: center;}
